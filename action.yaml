@@ -1,0 +1,55 @@
+name: Build container
+description: ""
+
+inputs:
+  annotations:
+    description: "List (new line for each entry) of annotation to set to the image"
+    required: false
+  build-args:
+    description: "List of build-time variables"
+    required: false
+  dockerfile-path:
+    description: "Path to the Dockerfile"
+    required: false
+  labels:
+    description: "List (new line for each entry) of metadata for an image"
+    required: false
+  secrets:
+    description: "List (new line for each entry) of secrets to expose to the build (e.g., key=string, GIT_AUTH_TOKEN=mytoken)"
+    required: false
+  tags:
+    description: "List of tags"
+    required: false
+
+  image-destination-host:
+    description: "Where to upload the artifact to - if only local is desired just use \"localhost:5000\" - trailing slash is not allowed"
+    default: ghcr.io
+    required: true
+  image-destination-name:
+    description: "The desired name of the output artifact, defaults to: \"owner/repository\""
+    default: "${{ github.repository }}"
+    required: false
+#  image-destination-tag-override:
+#    description: "If the default tag generation is to be overridden"
+#    default: ""
+#    required: false
+
+
+outputs:
+  imageid:
+    description: 'Image ID'
+  digest:
+    description: 'Image digest'
+  metadata:
+    description: 'Build result metadata'
+
+  container-image:
+    description: The random image name used for generation
+    value: ${{ steps.build-image.outputs.container-image }}
+  image-digest:
+    description: The digest of the final image
+    value: ${{ steps.push-image.outputs.image-digest }}
+
+runs:
+  using: node20
+  main: index.js
