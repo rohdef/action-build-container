@@ -1,14 +1,15 @@
 {
   "name": "action-build-container",
   "version": "0.0.1",
-  "main": "kotlin/action-build-container.js",
+  "main": "kotlin/action-build-container.mjs",
   "devDependencies": {
     "typescript": "5.5.4",
     "source-map-support": "0.5.21"
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@docker/actions-toolkit": "^0.47.0"
+    "@docker/actions-toolkit": "^0.47.0",
+    "format-util": "^1.0.5"
   },
   "peerDependencies": {},
   "optionalDependencies": {},
