@@ -32,44 +32,42 @@
   var imul = Math.imul;
   var Unit_instance = kotlin_kotlin.$_$.a1;
   var VOID = kotlin_kotlin.$_$.b;
-  var CoroutineImpl = kotlin_kotlin.$_$.a2;
-  var protoOf = kotlin_kotlin.$_$.p2;
-  var THROW_CCE = kotlin_kotlin.$_$.c3;
+  var CoroutineImpl = kotlin_kotlin.$_$.y1;
+  var protoOf = kotlin_kotlin.$_$.n2;
+  var THROW_CCE = kotlin_kotlin.$_$.a3;
   var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.a;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.k1;
-  var Exception = kotlin_kotlin.$_$.z2;
-  var initMetadataForLambda = kotlin_kotlin.$_$.l2;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.i1;
+  var Exception = kotlin_kotlin.$_$.x2;
+  var initMetadataForLambda = kotlin_kotlin.$_$.j2;
   var Companion_getInstance = kotlin_kotlin.$_$.y;
-  var listOf = kotlin_kotlin.$_$.f1;
-  var collectionSizeOrDefault = kotlin_kotlin.$_$.e1;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.d;
-  var zip = kotlin_kotlin.$_$.i1;
-  var initMetadataForCoroutine = kotlin_kotlin.$_$.j2;
-  var get_EmptyContinuation = kotlin_kotlin.$_$.o1;
+  var initMetadataForCoroutine = kotlin_kotlin.$_$.h2;
+  var get_EmptyContinuation = kotlin_kotlin.$_$.m1;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
-  var isInterface = kotlin_kotlin.$_$.o2;
+  var isInterface = kotlin_kotlin.$_$.m2;
   var GlobalScope_instance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var promise = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
-  var initMetadataForClass = kotlin_kotlin.$_$.h2;
-  var initMetadataForCompanion = kotlin_kotlin.$_$.i2;
-  var toString = kotlin_kotlin.$_$.q2;
-  var hashCode = kotlin_kotlin.$_$.g2;
-  var getStringHashCode = kotlin_kotlin.$_$.f2;
+  var initMetadataForClass = kotlin_kotlin.$_$.f2;
+  var initMetadataForCompanion = kotlin_kotlin.$_$.g2;
+  var toString = kotlin_kotlin.$_$.o2;
+  var hashCode = kotlin_kotlin.$_$.e2;
+  var getStringHashCode = kotlin_kotlin.$_$.d2;
   var Collection = kotlin_kotlin.$_$.c1;
-  var contains = kotlin_kotlin.$_$.s2;
+  var contains = kotlin_kotlin.$_$.q2;
   var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.m;
-  var split = kotlin_kotlin.$_$.v2;
-  var mapCapacity = kotlin_kotlin.$_$.g1;
-  var coerceAtLeast = kotlin_kotlin.$_$.r2;
+  var collectionSizeOrDefault = kotlin_kotlin.$_$.e1;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.d;
+  var split = kotlin_kotlin.$_$.t2;
+  var mapCapacity = kotlin_kotlin.$_$.f1;
+  var coerceAtLeast = kotlin_kotlin.$_$.p2;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.g;
-  var isCharSequence = kotlin_kotlin.$_$.n2;
-  var trim = kotlin_kotlin.$_$.w2;
-  var to = kotlin_kotlin.$_$.k3;
-  var lines = kotlin_kotlin.$_$.u2;
+  var isCharSequence = kotlin_kotlin.$_$.l2;
+  var trim = kotlin_kotlin.$_$.u2;
+  var to = kotlin_kotlin.$_$.i3;
+  var lines = kotlin_kotlin.$_$.s2;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.e;
-  var isBlank = kotlin_kotlin.$_$.t2;
-  var equals = kotlin_kotlin.$_$.e2;
-  var initMetadataForObject = kotlin_kotlin.$_$.m2;
+  var isBlank = kotlin_kotlin.$_$.r2;
+  var equals = kotlin_kotlin.$_$.c2;
+  var initMetadataForObject = kotlin_kotlin.$_$.k2;
   //endregion
   //region block: pre-declaration
   initMetadataForLambda(actionInfo$slambda, CoroutineImpl, VOID, [1]);
@@ -276,7 +274,6 @@
         switch (tmp) {
           case 0:
             this.m5_1 = 2;
-            this.lm_1 = new Date();
             this.l5_1 = 1;
             suspendResult = actionInfo(this.km_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -286,17 +283,7 @@
             continue $sm;
           case 1:
             var imageName = Companion_getInstance().bb();
-            listOf(['--tag', imageName.toString()]);
-            var this_0 = _Labels___get_value__impl__v31say(this.km_1.el_1.om_1);
-            var destination = ArrayList_init_$Create$(collectionSizeOrDefault(this_0, 10));
-            var _iterator__ex2g4s = this_0.e();
-            while (_iterator__ex2g4s.f()) {
-              var item = _iterator__ex2g4s.g();
-              destination.k('--label');
-            }
-
-            zip(destination, _Labels___get_value__impl__v31say(this.km_1.el_1.om_1));
-            this.km_1.qm('We just fail right now');
+            this.km_1.lm('imageid', 'action: ' + imageName.toString());
             return Unit_instance;
           case 2:
             throw this.o5_1;
@@ -338,7 +325,7 @@
           case 0:
             this.m5_1 = 3;
             this.l5_1 = 1;
-            suspendResult = this.dl_1.rm('GitHub Actions runtime token ACs', actionInfo$slambda_0(null), this);
+            suspendResult = this.dl_1.mm('GitHub Actions runtime token ACs', actionInfo$slambda_0(null), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -346,7 +333,7 @@
             continue $sm;
           case 1:
             this.l5_1 = 2;
-            suspendResult = this.dl_1.rm('Docker info', actionInfo$slambda_2(null), this);
+            suspendResult = this.dl_1.mm('Docker info', actionInfo$slambda_2(null), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -372,18 +359,18 @@
     main(get_EmptyContinuation());
   }
   function Core$run$lambda$slambda($main, this$0, resultContinuation) {
-    this.an_1 = $main;
-    this.bn_1 = this$0;
+    this.vm_1 = $main;
+    this.wm_1 = this$0;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(Core$run$lambda$slambda).dn = function ($this$promise, $completion) {
-    var tmp = this.en($this$promise, $completion);
+  protoOf(Core$run$lambda$slambda).ym = function ($this$promise, $completion) {
+    var tmp = this.zm($this$promise, $completion);
     tmp.n5_1 = Unit_instance;
     tmp.o5_1 = null;
     return tmp.t5();
   };
   protoOf(Core$run$lambda$slambda).d6 = function (p1, $completion) {
-    return this.dn((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.ym((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(Core$run$lambda$slambda).t5 = function () {
     var suspendResult = this.n5_1;
@@ -394,7 +381,7 @@
           case 0:
             this.m5_1 = 2;
             this.l5_1 = 1;
-            suspendResult = this.an_1(this.bn_1, this);
+            suspendResult = this.vm_1(this.wm_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -416,15 +403,15 @@
       }
      while (true);
   };
-  protoOf(Core$run$lambda$slambda).en = function ($this$promise, completion) {
-    var i = new Core$run$lambda$slambda(this.an_1, this.bn_1, completion);
-    i.cn_1 = $this$promise;
+  protoOf(Core$run$lambda$slambda).zm = function ($this$promise, completion) {
+    var i = new Core$run$lambda$slambda(this.vm_1, this.wm_1, completion);
+    i.xm_1 = $this$promise;
     return i;
   };
   function Core$run$lambda$slambda_0($main, this$0, resultContinuation) {
     var i = new Core$run$lambda$slambda($main, this$0, resultContinuation);
     var l = function ($this$promise, $completion) {
-      return i.dn($this$promise, $completion);
+      return i.ym($this$promise, $completion);
     };
     l.$arity = 1;
     return l;
@@ -436,18 +423,18 @@
     };
   }
   function Core$run$slambda($it, this$0, resultContinuation) {
-    this.nn_1 = $it;
-    this.on_1 = this$0;
+    this.in_1 = $it;
+    this.jn_1 = this$0;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(Core$run$slambda).dn = function ($this$promise, $completion) {
-    var tmp = this.en($this$promise, $completion);
+  protoOf(Core$run$slambda).ym = function ($this$promise, $completion) {
+    var tmp = this.zm($this$promise, $completion);
     tmp.n5_1 = Unit_instance;
     tmp.o5_1 = null;
     return tmp.t5();
   };
   protoOf(Core$run$slambda).d6 = function (p1, $completion) {
-    return this.dn((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.ym((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(Core$run$slambda).t5 = function () {
     var suspendResult = this.n5_1;
@@ -458,7 +445,7 @@
           case 0:
             this.m5_1 = 2;
             this.l5_1 = 1;
-            suspendResult = this.nn_1(this.on_1, this);
+            suspendResult = this.in_1(this.jn_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -480,15 +467,15 @@
       }
      while (true);
   };
-  protoOf(Core$run$slambda).en = function ($this$promise, completion) {
-    var i = new Core$run$slambda(this.nn_1, this.on_1, completion);
-    i.pn_1 = $this$promise;
+  protoOf(Core$run$slambda).zm = function ($this$promise, completion) {
+    var i = new Core$run$slambda(this.in_1, this.jn_1, completion);
+    i.kn_1 = $this$promise;
     return i;
   };
   function Core$run$slambda_0($it, this$0, resultContinuation) {
     var i = new Core$run$slambda($it, this$0, resultContinuation);
     var l = function ($this$promise, $completion) {
-      return i.dn($this$promise, $completion);
+      return i.ym($this$promise, $completion);
     };
     l.$arity = 1;
     return l;
@@ -506,18 +493,18 @@
     return l;
   }
   function Core$group$lambda$slambda($contents, this$0, resultContinuation) {
-    this.yn_1 = $contents;
-    this.zn_1 = this$0;
+    this.tn_1 = $contents;
+    this.un_1 = this$0;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(Core$group$lambda$slambda).dn = function ($this$promise, $completion) {
-    var tmp = this.en($this$promise, $completion);
+  protoOf(Core$group$lambda$slambda).ym = function ($this$promise, $completion) {
+    var tmp = this.zm($this$promise, $completion);
     tmp.n5_1 = Unit_instance;
     tmp.o5_1 = null;
     return tmp.t5();
   };
   protoOf(Core$group$lambda$slambda).d6 = function (p1, $completion) {
-    return this.dn((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.ym((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(Core$group$lambda$slambda).t5 = function () {
     var suspendResult = this.n5_1;
@@ -528,7 +515,7 @@
           case 0:
             this.m5_1 = 2;
             this.l5_1 = 1;
-            suspendResult = this.yn_1(this.zn_1, this);
+            suspendResult = this.tn_1(this.un_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -550,15 +537,15 @@
       }
      while (true);
   };
-  protoOf(Core$group$lambda$slambda).en = function ($this$promise, completion) {
-    var i = new Core$group$lambda$slambda(this.yn_1, this.zn_1, completion);
-    i.ao_1 = $this$promise;
+  protoOf(Core$group$lambda$slambda).zm = function ($this$promise, completion) {
+    var i = new Core$group$lambda$slambda(this.tn_1, this.un_1, completion);
+    i.vn_1 = $this$promise;
     return i;
   };
   function Core$group$lambda$slambda_0($contents, this$0, resultContinuation) {
     var i = new Core$group$lambda$slambda($contents, this$0, resultContinuation);
     var l = function ($this$promise, $completion) {
-      return i.dn($this$promise, $completion);
+      return i.ym($this$promise, $completion);
     };
     l.$arity = 1;
     return l;
@@ -572,9 +559,9 @@
   function Core_0() {
     var tmp = this;
     var tmp_0 = Companion_instance_3;
-    tmp.el_1 = tmp_0.bo(Core$getInput$ref(Core));
+    tmp.el_1 = tmp_0.wn(Core$getInput$ref(Core));
   }
-  protoOf(Core_0).co = function (main, post, $completion) {
+  protoOf(Core_0).xn = function (main, post, $completion) {
     var tmp = actionsToolkit;
     var tmp_0 = Core$run$lambda(main, this);
     var tmp_1;
@@ -599,14 +586,14 @@
   };
   protoOf(Core_0).fl = function (main, post, $completion, $super) {
     post = post === VOID ? null : post;
-    return $super === VOID ? this.co(main, post, $completion) : $super.co.call(this, main, post, $completion);
+    return $super === VOID ? this.xn(main, post, $completion) : $super.xn.call(this, main, post, $completion);
   };
-  protoOf(Core_0).rm = function (name, contents, $completion) {
+  protoOf(Core_0).mm = function (name, contents, $completion) {
     var tmp = Core;
     return await_0(tmp.group(name, Core$group$lambda(contents, this)), $completion);
   };
-  protoOf(Core_0).qm = function (message) {
-    return Core.setFailed(message);
+  protoOf(Core_0).lm = function (name, value) {
+    return Core.setOutput(name, value);
   };
   protoOf(Core_0).bm = function (message) {
     return Core.info(message);
@@ -619,8 +606,8 @@
   }
   function Companion() {
   }
-  protoOf(Companion).do = function (value) {
-    return _Annotations___init__impl__gg5cff(Companion_instance_3.eo(value));
+  protoOf(Companion).yn = function (value) {
+    return _Annotations___init__impl__gg5cff(Companion_instance_3.zn(value));
   };
   var Companion_instance;
   function Companion_getInstance_0() {
@@ -637,7 +624,7 @@
   }
   function Companion_0() {
   }
-  protoOf(Companion_0).fo = function (value) {
+  protoOf(Companion_0).ao = function (value) {
     return _DockerfilePath___init__impl__w2j3a8(value);
   };
   var Companion_instance_0;
@@ -653,13 +640,10 @@
   function _Labels___init__impl__usgt1a(value) {
     return value;
   }
-  function _Labels___get_value__impl__v31say($this) {
-    return $this;
-  }
   function Companion_1() {
   }
-  protoOf(Companion_1).go = function (value) {
-    return _Labels___init__impl__usgt1a(Companion_instance_3.eo(value));
+  protoOf(Companion_1).bo = function (value) {
+    return _Labels___init__impl__usgt1a(Companion_instance_3.zn(value));
   };
   var Companion_instance_1;
   function Companion_getInstance_2() {
@@ -682,8 +666,8 @@
   }
   function Companion_2() {
   }
-  protoOf(Companion_2).ho = function (value) {
-    var inputList = Companion_instance_3.eo(value);
+  protoOf(Companion_2).co = function (value) {
+    var inputList = Companion_instance_3.zn(value);
     var tmp$ret$0;
     $l$block_0: {
       // Inline function 'kotlin.collections.all' call
@@ -719,7 +703,7 @@
       var item = _iterator__ex2g4s_0.g();
       // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
       var tmp$ret$2 = split(item, ['=']);
-      destination.k(tmp$ret$2);
+      destination.o(tmp$ret$2);
     }
     // Inline function 'kotlin.collections.associate' call
     var capacity = coerceAtLeast(mapCapacity(collectionSizeOrDefault(destination, 10)), 16);
@@ -730,10 +714,10 @@
       var element_0 = _iterator__ex2g4s_1.g();
       // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
       // Inline function 'kotlin.text.trim' call
-      var this_0 = element_0.m(0);
+      var this_0 = element_0.i(0);
       var tmp$ret$5 = toString(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
       // Inline function 'kotlin.collections.plusAssign' call
-      var pair = to(tmp$ret$5, element_0.m(1));
+      var pair = to(tmp$ret$5, element_0.i(1));
       destination_0.r2(pair.ea_1, pair.fa_1);
     }
     var secrets = destination_0;
@@ -748,7 +732,7 @@
   }
   function Companion_3() {
   }
-  protoOf(Companion_3).eo = function (_this__u8e3s4) {
+  protoOf(Companion_3).zn = function (_this__u8e3s4) {
     // Inline function 'kotlin.collections.map' call
     var this_0 = lines(_this__u8e3s4);
     // Inline function 'kotlin.collections.mapTo' call
@@ -759,7 +743,7 @@
       // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.toInputList.<anonymous>' call
       // Inline function 'kotlin.text.trim' call
       var tmp$ret$1 = toString(trim(isCharSequence(item) ? item : THROW_CCE()));
-      destination.k(tmp$ret$1);
+      destination.o(tmp$ret$1);
     }
     // Inline function 'kotlin.collections.filter' call
     // Inline function 'kotlin.collections.filterTo' call
@@ -770,32 +754,32 @@
       // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.toInputList.<anonymous>' call
       // Inline function 'kotlin.text.isNotBlank' call
       if (!isBlank(element)) {
-        destination_0.k(element);
+        destination_0.o(element);
       }
     }
     return destination_0;
   };
-  protoOf(Companion_3).bo = function (getInput) {
-    return new Inputs(Companion_instance.do(getInput(InputNames_instance.io_1)), Companion_instance_0.fo(getInput(InputNames_instance.jo_1)), Companion_instance_1.go(getInput(InputNames_instance.ko_1)), Companion_instance_2.ho(getInput(InputNames_instance.lo_1)));
+  protoOf(Companion_3).wn = function (getInput) {
+    return new Inputs(Companion_instance.yn(getInput(InputNames_instance.do_1)), Companion_instance_0.ao(getInput(InputNames_instance.eo_1)), Companion_instance_1.bo(getInput(InputNames_instance.fo_1)), Companion_instance_2.co(getInput(InputNames_instance.go_1)));
   };
   var Companion_instance_3;
   function Companion_getInstance_4() {
     return Companion_instance_3;
   }
   function Inputs(annotations, dockerfilePath, labels, secrets) {
-    this.mm_1 = annotations;
-    this.nm_1 = dockerfilePath;
-    this.om_1 = labels;
-    this.pm_1 = secrets;
+    this.ho_1 = annotations;
+    this.io_1 = dockerfilePath;
+    this.jo_1 = labels;
+    this.ko_1 = secrets;
   }
   protoOf(Inputs).toString = function () {
-    return 'Inputs(annotations=' + Annotations__toString_impl_tawfwj(this.mm_1) + ', dockerfilePath=' + DockerfilePath__toString_impl_moci74(this.nm_1) + ', labels=' + Labels__toString_impl_hmv2m6(this.om_1) + ', secrets=' + Secrets__toString_impl_fjs7pe(this.pm_1) + ')';
+    return 'Inputs(annotations=' + Annotations__toString_impl_tawfwj(this.ho_1) + ', dockerfilePath=' + DockerfilePath__toString_impl_moci74(this.io_1) + ', labels=' + Labels__toString_impl_hmv2m6(this.jo_1) + ', secrets=' + Secrets__toString_impl_fjs7pe(this.ko_1) + ')';
   };
   protoOf(Inputs).hashCode = function () {
-    var result = Annotations__hashCode_impl_jz1p9q(this.mm_1);
-    result = imul(result, 31) + DockerfilePath__hashCode_impl_qllmz5(this.nm_1) | 0;
-    result = imul(result, 31) + Labels__hashCode_impl_vn32k3(this.om_1) | 0;
-    result = imul(result, 31) + Secrets__hashCode_impl_xq5xgv(this.pm_1) | 0;
+    var result = Annotations__hashCode_impl_jz1p9q(this.ho_1);
+    result = imul(result, 31) + DockerfilePath__hashCode_impl_qllmz5(this.io_1) | 0;
+    result = imul(result, 31) + Labels__hashCode_impl_vn32k3(this.jo_1) | 0;
+    result = imul(result, 31) + Secrets__hashCode_impl_xq5xgv(this.ko_1) | 0;
     return result;
   };
   protoOf(Inputs).equals = function (other) {
@@ -804,21 +788,21 @@
     if (!(other instanceof Inputs))
       return false;
     var tmp0_other_with_cast = other instanceof Inputs ? other : THROW_CCE();
-    if (!equals(this.mm_1, tmp0_other_with_cast.mm_1))
+    if (!equals(this.ho_1, tmp0_other_with_cast.ho_1))
       return false;
-    if (!(this.nm_1 === tmp0_other_with_cast.nm_1))
+    if (!(this.io_1 === tmp0_other_with_cast.io_1))
       return false;
-    if (!equals(this.om_1, tmp0_other_with_cast.om_1))
+    if (!equals(this.jo_1, tmp0_other_with_cast.jo_1))
       return false;
-    if (!equals(this.pm_1, tmp0_other_with_cast.pm_1))
+    if (!equals(this.ko_1, tmp0_other_with_cast.ko_1))
       return false;
     return true;
   };
   function InputNames() {
-    this.io_1 = 'annotations';
-    this.jo_1 = 'dockerfile-path';
-    this.ko_1 = 'labels';
-    this.lo_1 = 'secrets';
+    this.do_1 = 'annotations';
+    this.eo_1 = 'dockerfile-path';
+    this.fo_1 = 'labels';
+    this.go_1 = 'secrets';
   }
   var InputNames_instance;
   function InputNames_getInstance() {
