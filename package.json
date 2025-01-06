@@ -4,8 +4,7 @@
   "private": true,
   "workspaces": [
     "packages/action-build-container",
-    "packages/action-build-container-test",
-    "packages_imported/kotlin-node/20.14.10-pre.804"
+    "packages/action-build-container-test"
   ],
   "overrides": {},
   "devDependencies": {},

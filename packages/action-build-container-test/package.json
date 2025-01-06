@@ -1,7 +1,7 @@
 {
   "name": "action-build-container-test",
   "version": "0.0.1",
-  "main": "kotlin/action-build-container-test.mjs",
+  "main": "kotlin/action-build-container-test.js",
   "devDependencies": {
     "typescript": "5.5.4",
     "mocha": "10.7.3",
@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@docker/actions-toolkit": "^0.47.0",
-    "format-util": "^1.0.5"
+    "@docker/actions-toolkit": "^0.47.0"
   },
   "peerDependencies": {},
   "optionalDependencies": {},

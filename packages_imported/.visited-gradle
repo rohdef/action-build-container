@@ -7,16 +7,6 @@
     "da2498cb322f3066e609531d5c6babd6": {
       "src": "/home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-dom-api-compat/2.1.0/40b26bd1544634256a38fa11cd8b9c0afbc82d01/kotlin-dom-api-compat-2.1.0.klib"
     },
-    "6a79752c9aac10c1ecd68a1f1b50fe71": {
-      "src": "/home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin-wrappers/kotlin-node-js/20.14.10-pre.804/3575be23c773dfe5bb8f9398ce65f93066f0e3e5/kotlin-node-js-20.14.10-pre.804.klib",
-      "target": "kotlin-node/20.14.10-pre.804"
-    },
-    "f953dc5570983d4d94feb957e380475f": {
-      "src": "/home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin-wrappers/kotlin-web-js/1.0.0-pre.804/f96b8e3f81060f841d0dfe10629e811ab73dc088/kotlin-web-js-1.0.0-pre.804.klib"
-    },
-    "03afa8f8e5a07fbde51bfafa14098c2e": {
-      "src": "/home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin-wrappers/kotlin-js-js/1.0.0-pre.804/78f1bda8e59904fdf3bc30427831973add4a2fff/kotlin-js-js-1.0.0-pre.804.klib"
-    },
     "7323f2e101d0df459c3ca907e65ee2ca": {
       "src": "/home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-js/1.9.0/155bfdad6f6ebdde0a8049053675623eb3a1e36f/kotlinx-coroutines-core-js-1.9.0.klib"
     },
@@ -25,15 +15,6 @@
     },
     "53e4d184e3f599ec39ce21b9cfb9f9dc": {
       "src": "/home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlinx-atomicfu-runtime/2.0.0/5dd3b6879cd1d19249083132503a739f8558426d/kotlinx-atomicfu-runtime-2.0.0.klib"
-    },
-    "7418ed63c6febe42e6bdbd404e0f02ac": {
-      "src": "/home/runner/.gradle/caches/modules-2/files-2.1/io.github.turansky.seskar/seskar-core-js/3.20.0/5a196cc5855fe56784657d336fb329004fab841e/seskar-core-js-3.20.0.klib"
-    },
-    "8d8a63cf58d27f988b734268dfe022f2": {
-      "src": "/home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-js-plain-objects/2.0.20/f6bb4c620d185f97f176933e84173753909ce5f1/kotlin-js-plain-objects-2.0.20.klib"
-    },
-    "cf2a20a8533655194bae6cf99b80b659": {
-      "src": "/home/runner/.gradle/caches/modules-2/files-2.1/io.github.turansky.seskar/seskar-react-js/3.20.0/bed0abf9575df043b699c15682461fe5c5375e6a/seskar-react-js-3.20.0.klib"
     }
   }
 }
