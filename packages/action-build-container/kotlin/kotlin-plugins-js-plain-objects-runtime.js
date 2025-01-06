@@ -5,4 +5,4 @@
   return _;
 }(module.exports));
 
-//# sourceMappingURL=kotlin-kotlinx-atomicfu-runtime.js.map
+//# sourceMappingURL=kotlin-plugins-js-plain-objects-runtime.js.map

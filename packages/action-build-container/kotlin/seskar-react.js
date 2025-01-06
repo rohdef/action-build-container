@@ -5,4 +5,4 @@
   return _;
 }(module.exports));
 
-//# sourceMappingURL=kotlin-kotlinx-atomicfu-runtime.js.map
+//# sourceMappingURL=seskar-react.js.map

@@ -1,0 +1,13 @@
+{
+  "name": "kotlin-node",
+  "version": "20.14.10-pre.804",
+  "main": "kotlin-node.mjs",
+  "types": "kotlin-node.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

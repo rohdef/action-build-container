@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@docker/actions-toolkit": "^0.47.0"
+    "@docker/actions-toolkit": "^0.47.0",
+    "format-util": "^1.0.5"
   },
   "peerDependencies": {},
   "optionalDependencies": {},
