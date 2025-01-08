@@ -336,7 +336,7 @@
 
             this.j5_1 = 3;
             var tmp_3 = Exec;
-            var this_1 = ['--format', '{{index .RepoDigests 0}}', this.ao_1.toString()];
+            var this_1 = ['inspect', '--format', '{{index .RepoDigests 0}}', this.ao_1.toString()];
             suspendResult = await_0(tmp_3.getExecOutput('docker', this_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -347,7 +347,8 @@
             var imageDigestOutput = suspendResult;
             if (imageDigestOutput.exitCode === 0) {
               var digest = imageDigestOutput.stdout;
-              this.zn_1.qn('Digest:                       [' + digest + ']');
+              this.zn_1.qn('Digest: [' + digest + ']');
+              this.zn_1.jo('digest', digest);
             } else {
               this.zn_1.oo('Could not get docker image digest');
             }
