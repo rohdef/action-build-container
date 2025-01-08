@@ -6,20 +6,20 @@
         return instance && (typeof instance === 'object') && (instance.done === false)
     }
     }.prototype).constructor;
-  var protoOf = kotlin_kotlin.$_$.v2;
-  var initMetadataForClass = kotlin_kotlin.$_$.n2;
+  var protoOf = kotlin_kotlin.$_$.w2;
+  var initMetadataForClass = kotlin_kotlin.$_$.o2;
   var VOID = kotlin_kotlin.$_$.b;
-  var iterator = kotlin_kotlin.$_$.z2;
-  var CoroutineImpl = kotlin_kotlin.$_$.e2;
+  var iterator = kotlin_kotlin.$_$.a3;
+  var CoroutineImpl = kotlin_kotlin.$_$.f2;
   var Unit_instance = kotlin_kotlin.$_$.a1;
-  var THROW_CCE = kotlin_kotlin.$_$.m3;
-  var SequenceScope = kotlin_kotlin.$_$.y2;
-  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.o1;
-  var initMetadataForLambda = kotlin_kotlin.$_$.r2;
-  var intercepted = kotlin_kotlin.$_$.q1;
+  var THROW_CCE = kotlin_kotlin.$_$.n3;
+  var SequenceScope = kotlin_kotlin.$_$.z2;
+  var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.p1;
+  var initMetadataForLambda = kotlin_kotlin.$_$.s2;
+  var intercepted = kotlin_kotlin.$_$.r1;
   var CancellableContinuationImpl = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
-  var resume = kotlin_kotlin.$_$.g2;
-  var resumeWithException = kotlin_kotlin.$_$.f2;
+  var resume = kotlin_kotlin.$_$.h2;
+  var resumeWithException = kotlin_kotlin.$_$.g2;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(AsyncIteratorAdapter, 'AsyncIteratorAdapter', VOID, VOID, VOID, [0]);

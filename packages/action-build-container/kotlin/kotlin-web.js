@@ -4,7 +4,7 @@
   var VOID = kotlin_kotlin.$_$.b;
   var Unit_instance = kotlin_kotlin.$_$.a1;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.e;
-  var sequenceOf = kotlin_kotlin.$_$.a3;
+  var sequenceOf = kotlin_kotlin.$_$.b3;
   //endregion
   //region block: pre-declaration
   //endregion
