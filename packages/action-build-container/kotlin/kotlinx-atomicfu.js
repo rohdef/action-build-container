@@ -1,11 +1,11 @@
 (function (_, kotlin_kotlin) {
   'use strict';
   //region block: imports
-  var protoOf = kotlin_kotlin.$_$.s2;
-  var initMetadataForObject = kotlin_kotlin.$_$.p2;
+  var protoOf = kotlin_kotlin.$_$.v2;
+  var initMetadataForObject = kotlin_kotlin.$_$.s2;
   var VOID = kotlin_kotlin.$_$.b;
-  var initMetadataForClass = kotlin_kotlin.$_$.k2;
-  var toString = kotlin_kotlin.$_$.q3;
+  var initMetadataForClass = kotlin_kotlin.$_$.n2;
+  var toString = kotlin_kotlin.$_$.t3;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(atomicfu$TraceBase, 'TraceBase');
@@ -37,10 +37,10 @@
   function AtomicRef(value) {
     this.kotlinx$atomicfu$value = value;
   }
-  protoOf(AtomicRef).hb = function (_set____db54di) {
+  protoOf(AtomicRef).jb = function (_set____db54di) {
     this.kotlinx$atomicfu$value = _set____db54di;
   };
-  protoOf(AtomicRef).ib = function () {
+  protoOf(AtomicRef).kb = function () {
     return this.kotlinx$atomicfu$value;
   };
   protoOf(AtomicRef).atomicfu$compareAndSet = function (expect, update) {
@@ -63,10 +63,10 @@
   function AtomicBoolean(value) {
     this.kotlinx$atomicfu$value = value;
   }
-  protoOf(AtomicBoolean).jb = function (_set____db54di) {
+  protoOf(AtomicBoolean).lb = function (_set____db54di) {
     this.kotlinx$atomicfu$value = _set____db54di;
   };
-  protoOf(AtomicBoolean).ib = function () {
+  protoOf(AtomicBoolean).kb = function () {
     return this.kotlinx$atomicfu$value;
   };
   protoOf(AtomicBoolean).atomicfu$compareAndSet = function (expect, update) {
@@ -89,10 +89,10 @@
   function AtomicInt(value) {
     this.kotlinx$atomicfu$value = value;
   }
-  protoOf(AtomicInt).kb = function (_set____db54di) {
+  protoOf(AtomicInt).mb = function (_set____db54di) {
     this.kotlinx$atomicfu$value = _set____db54di;
   };
-  protoOf(AtomicInt).ib = function () {
+  protoOf(AtomicInt).kb = function () {
     return this.kotlinx$atomicfu$value;
   };
   protoOf(AtomicInt).atomicfu$compareAndSet = function (expect, update) {

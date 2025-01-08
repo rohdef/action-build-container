@@ -4,7 +4,7 @@
   var VOID = kotlin_kotlin.$_$.b;
   var Unit_instance = kotlin_kotlin.$_$.a1;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.e;
-  var sequenceOf = kotlin_kotlin.$_$.x2;
+  var sequenceOf = kotlin_kotlin.$_$.a3;
   //endregion
   //region block: pre-declaration
   //endregion
@@ -160,7 +160,7 @@
       // Inline function 'web.abort.internal.safeAny.<anonymous>' call
       // Inline function 'web.events.EventTypes.ABORT' call
       var tmp$ret$5 = addEventHandler(item, 'abort', abortHandler);
-      handlers.p(tmp$ret$5);
+      handlers.q(tmp$ret$5);
     }
     return controller.signal;
   }
