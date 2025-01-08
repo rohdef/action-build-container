@@ -22,7 +22,6 @@
   var emptyList = kotlin_kotlin.$_$.g1;
   var listOf = kotlin_kotlin.$_$.i1;
   var plus_0 = kotlin_kotlin.$_$.m1;
-  var toString = kotlin_kotlin.$_$.x2;
   var listOf_0 = kotlin_kotlin.$_$.h1;
   var copyToArray = kotlin_kotlin.$_$.f1;
   var initMetadataForCoroutine = kotlin_kotlin.$_$.q2;
@@ -41,6 +40,7 @@
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.g;
   var isCharSequence = kotlin_kotlin.$_$.u2;
   var trim = kotlin_kotlin.$_$.g3;
+  var toString = kotlin_kotlin.$_$.x2;
   var initMetadataForCompanion = kotlin_kotlin.$_$.p2;
   var hashCode = kotlin_kotlin.$_$.n2;
   var getStringHashCode = kotlin_kotlin.$_$.m2;
@@ -316,8 +316,6 @@
             }
 
             tmp_1.go_1 = accumulator_1;
-            this.zn_1.qn(toString(this.fo_1));
-            this.zn_1.qn(toString(this.go_1));
             this.ho_1 = plus_0(plus_0(plus_0(listOf(['build', '-t', this.ao_1.toString()]), this.fo_1), this.go_1), listOf_0(_DockerfilePath___get_value__impl__16f0ic(this.zn_1.tm_1.lo_1)));
             this.j5_1 = 2;
             var tmp_2 = Exec;
@@ -329,10 +327,13 @@
 
             continue $sm;
           case 2:
-            var o = suspendResult;
-            this.zn_1.qn('Result: ' + o.exitCode);
-            this.zn_1.qn(o.stdout);
-            this.zn_1.no(o.stderr);
+            var dockerBuildOutput = suspendResult;
+            if (dockerBuildOutput.exitCode === 0) {
+              this.zn_1.qn('Successfully built docker container');
+            } else {
+              this.zn_1.no('Could not build docker container');
+            }
+
             return Unit_instance;
           case 3:
             throw this.m5_1;
@@ -644,14 +645,14 @@
   protoOf(Core_0).io = function (name, value) {
     return Core.setOutput(name, value);
   };
+  protoOf(Core_0).no = function (message) {
+    return Core.setFailed(message);
+  };
   protoOf(Core_0).qn = function (message) {
     return Core.info(message);
   };
   protoOf(Core_0).gn = function (message) {
     return Core.warning(message);
-  };
-  protoOf(Core_0).no = function (message) {
-    return Core.error(message);
   };
   function _Annotations___init__impl__gg5cff(value) {
     return value;
