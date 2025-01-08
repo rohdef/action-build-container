@@ -289,7 +289,7 @@
             continue $sm;
           case 1:
             this.ao_1 = Companion_getInstance().ib();
-            this.zn_1.io('imageid', 'action: ' + this.ao_1.toString());
+            this.zn_1.io('imageid', this.ao_1.toString());
             this.bo_1 = new ActionEnvironment(node_process_process_dcpv5o);
             this.co_1 = (new Date()).toISOString();
             this.do_1 = mapOf([to('dk.rohdef.actions.runnumber', this.bo_1.pm_1), to('dk.rohdef.actions.builder', 'rohdef build container action'), to('org.opencontainers.image.created', this.co_1), to('org.opencontainers.image.authors', this.bo_1.mm_1), to('org.opencontainers.image.url', this.bo_1.rm_1), to('org.opencontainers.image.documentation', this.bo_1.rm_1), to('org.opencontainers.image.source', this.bo_1.rm_1), to('org.opencontainers.image.version', 'not specified'), to('org.opencontainers.image.revision', this.bo_1.nm_1), to('org.opencontainers.image.vendor', this.bo_1.mm_1), to('org.opencontainers.image.licenses', 'not specified'), to('org.opencontainers.image.ref.name', 'not specified'), to('org.opencontainers.image.title', 'not specified'), to('org.opencontainers.image.description', 'not specified')]);
