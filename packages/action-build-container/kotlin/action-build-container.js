@@ -30,6 +30,7 @@
   var isInterface = kotlin_kotlin.$_$.v2;
   var GlobalScope_instance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var promise = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e;
+  var Enum = kotlin_kotlin.$_$.h3;
   var Collection = kotlin_kotlin.$_$.c1;
   var contains = kotlin_kotlin.$_$.c3;
   var collectionSizeOrDefault = kotlin_kotlin.$_$.e1;
@@ -48,7 +49,6 @@
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.e;
   var isBlank = kotlin_kotlin.$_$.d3;
   var equals = kotlin_kotlin.$_$.l2;
-  var initMetadataForObject = kotlin_kotlin.$_$.t2;
   //endregion
   //region block: pre-declaration
   initMetadataForClass(ActionEnvironment, 'ActionEnvironment');
@@ -60,13 +60,14 @@
   initMetadataForLambda(Core$run$slambda, CoroutineImpl, VOID, [1]);
   initMetadataForLambda(Core$group$lambda$slambda, CoroutineImpl, VOID, [1]);
   initMetadataForClass(Core_0, 'Core', VOID, VOID, VOID, [2]);
+  initMetadataForClass(InputName, 'InputName', VOID, Enum);
   initMetadataForCompanion(Companion);
   initMetadataForCompanion(Companion_0);
   initMetadataForCompanion(Companion_1);
   initMetadataForCompanion(Companion_2);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Inputs, 'Inputs');
-  initMetadataForObject(InputNames, 'InputNames');
+  initMetadataForClass(OutputName, 'OutputName', VOID, Enum);
   //endregion
   function actionInfo(_this__u8e3s4, $completion) {
     var tmp = new $actionInfoCOROUTINE$0(_this__u8e3s4, $completion);
@@ -289,7 +290,7 @@
             continue $sm;
           case 1:
             this.ao_1 = Companion_getInstance().ib();
-            this.zn_1.io('imageId', this.ao_1.toString());
+            this.zn_1.io(OutputName_IMAGE_ID_getInstance(), this.ao_1.toString());
             this.bo_1 = new ActionEnvironment(node_process_process_dcpv5o);
             this.co_1 = (new Date()).toISOString();
             this.do_1 = mapOf([to('dk.rohdef.actions.runnumber', this.bo_1.pm_1), to('dk.rohdef.actions.builder', 'rohdef build container action'), to('org.opencontainers.image.created', this.co_1), to('org.opencontainers.image.authors', this.bo_1.mm_1), to('org.opencontainers.image.url', this.bo_1.rm_1), to('org.opencontainers.image.documentation', this.bo_1.rm_1), to('org.opencontainers.image.source', this.bo_1.rm_1), to('org.opencontainers.image.version', 'not specified'), to('org.opencontainers.image.revision', this.bo_1.nm_1), to('org.opencontainers.image.vendor', this.bo_1.mm_1), to('org.opencontainers.image.licenses', 'not specified'), to('org.opencontainers.image.ref.name', 'not specified'), to('org.opencontainers.image.title', 'not specified'), to('org.opencontainers.image.description', 'not specified')]);
@@ -535,16 +536,12 @@
       return $it;
     };
   }
-  function Core$getInput$ref($boundThis) {
-    var l = function (p0) {
-      return $boundThis.getInput(p0);
-    };
-    l.callableName = 'getInput';
-    return l;
+  function Core$inputs$lambda(it) {
+    return Core.getInput(it.pp_1);
   }
   function Core$group$lambda$slambda($contents, this$0, resultContinuation) {
-    this.vp_1 = $contents;
-    this.wp_1 = this$0;
+    this.yp_1 = $contents;
+    this.zp_1 = this$0;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(Core$group$lambda$slambda).ap = function ($this$promise, $completion) {
@@ -565,7 +562,7 @@
           case 0:
             this.k5_1 = 2;
             this.j5_1 = 1;
-            suspendResult = this.vp_1(this.wp_1, this);
+            suspendResult = this.yp_1(this.zp_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -588,8 +585,8 @@
      while (true);
   };
   protoOf(Core$group$lambda$slambda).bp = function ($this$promise, completion) {
-    var i = new Core$group$lambda$slambda(this.vp_1, this.wp_1, completion);
-    i.xp_1 = $this$promise;
+    var i = new Core$group$lambda$slambda(this.yp_1, this.zp_1, completion);
+    i.aq_1 = $this$promise;
     return i;
   };
   function Core$group$lambda$slambda_0($contents, this$0, resultContinuation) {
@@ -609,9 +606,9 @@
   function Core_0() {
     var tmp = this;
     var tmp_0 = Companion_instance_3;
-    tmp.tm_1 = tmp_0.yp(Core$getInput$ref(Core));
+    tmp.tm_1 = tmp_0.bq(Core$inputs$lambda);
   }
-  protoOf(Core_0).zp = function (main, post, $completion) {
+  protoOf(Core_0).cq = function (main, post, $completion) {
     var tmp = actionsToolkit;
     var tmp_0 = Core$run$lambda(main, this);
     var tmp_1;
@@ -619,7 +616,7 @@
       tmp_1 = null;
     } else {
       // Inline function 'kotlin.let' call
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Core.run.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Core.run.<anonymous>' call
       var tmp_2 = GlobalScope_instance;
       tmp_1 = promise(tmp_2, VOID, VOID, Core$run$slambda_0(post, this, null));
     }
@@ -629,21 +626,21 @@
       tmp_3 = null;
     } else {
       // Inline function 'kotlin.let' call
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Core.run.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Core.run.<anonymous>' call
       tmp_3 = Core$run$lambda_0(tmp1_safe_receiver);
     }
     return tmp.run(tmp_0, tmp_3, $completion);
   };
   protoOf(Core_0).um = function (main, post, $completion, $super) {
     post = post === VOID ? null : post;
-    return $super === VOID ? this.zp(main, post, $completion) : $super.zp.call(this, main, post, $completion);
+    return $super === VOID ? this.cq(main, post, $completion) : $super.cq.call(this, main, post, $completion);
   };
   protoOf(Core_0).oo = function (name, contents, $completion) {
     var tmp = Core;
     return await_0(tmp.group(name, Core$group$lambda(contents, this)), $completion);
   };
   protoOf(Core_0).io = function (name, value) {
-    return Core.setOutput(name, value);
+    return Core.setOutput(name.fq_1, value);
   };
   protoOf(Core_0).no = function (message) {
     return Core.setFailed(message);
@@ -654,6 +651,40 @@
   protoOf(Core_0).gn = function (message) {
     return Core.warning(message);
   };
+  var InputName_ANNOTATIONS_instance;
+  var InputName_DOCKERFILE_instance;
+  var InputName_LABELS_instance;
+  var InputName_BUILD_ARGS_instance;
+  var InputName_entriesInitialized;
+  function InputName_initEntries() {
+    if (InputName_entriesInitialized)
+      return Unit_instance;
+    InputName_entriesInitialized = true;
+    InputName_ANNOTATIONS_instance = new InputName('ANNOTATIONS', 0, 'annotations');
+    InputName_DOCKERFILE_instance = new InputName('DOCKERFILE', 1, 'dockerfile-path');
+    InputName_LABELS_instance = new InputName('LABELS', 2, 'labels');
+    InputName_BUILD_ARGS_instance = new InputName('BUILD_ARGS', 3, 'build-args');
+  }
+  function InputName(name, ordinal, actionName) {
+    Enum.call(this, name, ordinal);
+    this.pp_1 = actionName;
+  }
+  function InputName_ANNOTATIONS_getInstance() {
+    InputName_initEntries();
+    return InputName_ANNOTATIONS_instance;
+  }
+  function InputName_DOCKERFILE_getInstance() {
+    InputName_initEntries();
+    return InputName_DOCKERFILE_instance;
+  }
+  function InputName_LABELS_getInstance() {
+    InputName_initEntries();
+    return InputName_LABELS_instance;
+  }
+  function InputName_BUILD_ARGS_getInstance() {
+    InputName_initEntries();
+    return InputName_BUILD_ARGS_instance;
+  }
   function _Annotations___init__impl__gg5cff(value) {
     return value;
   }
@@ -662,8 +693,8 @@
   }
   function Companion() {
   }
-  protoOf(Companion).aq = function (value) {
-    var inputList = Companion_instance_3.bq(value);
+  protoOf(Companion).gq = function (value) {
+    var inputList = Companion_instance_3.hq(value);
     var tmp$ret$0;
     $l$block_0: {
       // Inline function 'kotlin.collections.all' call
@@ -680,7 +711,7 @@
       var _iterator__ex2g4s = inputList.f();
       while (_iterator__ex2g4s.g()) {
         var element = _iterator__ex2g4s.h();
-        // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+        // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
         if (!contains(element, '=')) {
           tmp$ret$0 = false;
           break $l$block_0;
@@ -697,7 +728,7 @@
     var _iterator__ex2g4s_0 = inputList.f();
     while (_iterator__ex2g4s_0.g()) {
       var item = _iterator__ex2g4s_0.h();
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
       var tmp$ret$2 = split(item, ['=']);
       destination.q(tmp$ret$2);
     }
@@ -708,7 +739,7 @@
     var _iterator__ex2g4s_1 = destination.f();
     while (_iterator__ex2g4s_1.g()) {
       var element_0 = _iterator__ex2g4s_1.h();
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
       // Inline function 'kotlin.text.trim' call
       var this_0 = element_0.n(0);
       var tmp$ret$5 = toString(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
@@ -737,8 +768,8 @@
   }
   function Companion_0() {
   }
-  protoOf(Companion_0).cq = function (value) {
-    var inputList = Companion_instance_3.bq(value);
+  protoOf(Companion_0).iq = function (value) {
+    var inputList = Companion_instance_3.hq(value);
     var tmp$ret$0;
     $l$block_0: {
       // Inline function 'kotlin.collections.all' call
@@ -755,7 +786,7 @@
       var _iterator__ex2g4s = inputList.f();
       while (_iterator__ex2g4s.g()) {
         var element = _iterator__ex2g4s.h();
-        // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+        // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
         if (!contains(element, '=')) {
           tmp$ret$0 = false;
           break $l$block_0;
@@ -772,7 +803,7 @@
     var _iterator__ex2g4s_0 = inputList.f();
     while (_iterator__ex2g4s_0.g()) {
       var item = _iterator__ex2g4s_0.h();
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
       var tmp$ret$2 = split(item, ['=']);
       destination.q(tmp$ret$2);
     }
@@ -783,7 +814,7 @@
     var _iterator__ex2g4s_1 = destination.f();
     while (_iterator__ex2g4s_1.g()) {
       var element_0 = _iterator__ex2g4s_1.h();
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
       // Inline function 'kotlin.text.trim' call
       var this_0 = element_0.n(0);
       var tmp$ret$5 = toString(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
@@ -812,7 +843,7 @@
   }
   function Companion_1() {
   }
-  protoOf(Companion_1).dq = function (value) {
+  protoOf(Companion_1).jq = function (value) {
     return _DockerfilePath___init__impl__w2j3a8(value);
   };
   var Companion_instance_1;
@@ -830,8 +861,8 @@
   }
   function Companion_2() {
   }
-  protoOf(Companion_2).eq = function (value) {
-    var inputList = Companion_instance_3.bq(value);
+  protoOf(Companion_2).kq = function (value) {
+    var inputList = Companion_instance_3.hq(value);
     var tmp$ret$0;
     $l$block_0: {
       // Inline function 'kotlin.collections.all' call
@@ -848,7 +879,7 @@
       var _iterator__ex2g4s = inputList.f();
       while (_iterator__ex2g4s.g()) {
         var element = _iterator__ex2g4s.h();
-        // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+        // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
         if (!contains(element, '=')) {
           tmp$ret$0 = false;
           break $l$block_0;
@@ -865,7 +896,7 @@
     var _iterator__ex2g4s_0 = inputList.f();
     while (_iterator__ex2g4s_0.g()) {
       var item = _iterator__ex2g4s_0.h();
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
       var tmp$ret$2 = split(item, ['=']);
       destination.q(tmp$ret$2);
     }
@@ -876,7 +907,7 @@
     var _iterator__ex2g4s_1 = destination.f();
     while (_iterator__ex2g4s_1.g()) {
       var element_0 = _iterator__ex2g4s_1.h();
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Companion.fromValue.<anonymous>' call
       // Inline function 'kotlin.text.trim' call
       var this_0 = element_0.n(0);
       var tmp$ret$5 = toString(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
@@ -899,7 +930,7 @@
   }
   function Companion_3() {
   }
-  protoOf(Companion_3).bq = function (_this__u8e3s4) {
+  protoOf(Companion_3).hq = function (_this__u8e3s4) {
     // Inline function 'kotlin.collections.map' call
     var this_0 = lines(_this__u8e3s4);
     // Inline function 'kotlin.collections.mapTo' call
@@ -907,7 +938,7 @@
     var _iterator__ex2g4s = this_0.f();
     while (_iterator__ex2g4s.g()) {
       var item = _iterator__ex2g4s.h();
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.toInputList.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Companion.toInputList.<anonymous>' call
       // Inline function 'kotlin.text.trim' call
       var tmp$ret$1 = toString(trim(isCharSequence(item) ? item : THROW_CCE()));
       destination.q(tmp$ret$1);
@@ -918,7 +949,7 @@
     var _iterator__ex2g4s_0 = destination.f();
     while (_iterator__ex2g4s_0.g()) {
       var element = _iterator__ex2g4s_0.h();
-      // Inline function 'dk.rohdef.actions.dk.rohdef.actions.github.Companion.toInputList.<anonymous>' call
+      // Inline function 'dk.rohdef.actions.github.Companion.toInputList.<anonymous>' call
       // Inline function 'kotlin.text.isNotBlank' call
       if (!isBlank(element)) {
         destination_0.q(element);
@@ -926,8 +957,8 @@
     }
     return destination_0;
   };
-  protoOf(Companion_3).yp = function (getInput) {
-    return new Inputs(Companion_instance.aq(getInput(InputNames_instance.fq_1)), Companion_instance_0.cq(getInput(InputNames_instance.iq_1)), Companion_instance_1.dq(getInput(InputNames_instance.gq_1)), Companion_instance_2.eq(getInput(InputNames_instance.hq_1)));
+  protoOf(Companion_3).bq = function (getInput) {
+    return new Inputs(Companion_instance.gq(getInput(InputName_ANNOTATIONS_getInstance())), Companion_instance_0.iq(getInput(InputName_BUILD_ARGS_getInstance())), Companion_instance_1.jq(getInput(InputName_DOCKERFILE_getInstance())), Companion_instance_2.kq(getInput(InputName_LABELS_getInstance())));
   };
   var Companion_instance_3;
   function Companion_getInstance_4() {
@@ -965,15 +996,23 @@
       return false;
     return true;
   };
-  function InputNames() {
-    this.fq_1 = 'annotations';
-    this.gq_1 = 'dockerfilePath';
-    this.hq_1 = 'labels';
-    this.iq_1 = 'buildArgs';
+  var OutputName_IMAGE_ID_instance;
+  var OutputName_DIGEST_instance;
+  var OutputName_entriesInitialized;
+  function OutputName_initEntries() {
+    if (OutputName_entriesInitialized)
+      return Unit_instance;
+    OutputName_entriesInitialized = true;
+    OutputName_IMAGE_ID_instance = new OutputName('IMAGE_ID', 0, 'image-id');
+    OutputName_DIGEST_instance = new OutputName('DIGEST', 1, 'digest');
   }
-  var InputNames_instance;
-  function InputNames_getInstance() {
-    return InputNames_instance;
+  function OutputName(name, ordinal, actionName) {
+    Enum.call(this, name, ordinal);
+    this.fq_1 = actionName;
+  }
+  function OutputName_IMAGE_ID_getInstance() {
+    OutputName_initEntries();
+    return OutputName_IMAGE_ID_instance;
   }
   //region block: init
   Companion_instance = new Companion();
@@ -981,7 +1020,6 @@
   Companion_instance_1 = new Companion_1();
   Companion_instance_2 = new Companion_2();
   Companion_instance_3 = new Companion_3();
-  InputNames_instance = new InputNames();
   //endregion
   mainWrapper();
   return _;
